@@ -1,0 +1,45 @@
+html, body{
+        margin: 0;
+        height: 100%;
+        padding:5px;
+        overflow: hidden;
+
+}
+#b1{
+    border:solid 2px lightgrey;
+    padding:20px;
+}
+
+.sidebar{
+    padding:25px;
+    width:200px;
+}
+div .border{
+    border:solid 2px lightgrey;
+}
+.top{
+    padding-left:20px;
+}
+.mid{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: space-between; 
+    height:62vh;
+}
+main{display: flex;
+    justify-content: center;
+    width:60vw    
+}
+#content{
+    padding:30px;
+    overflow:auto;
+
+}
+
+footer{
+    height:70px;
+    display: flex;
+    align-items: center;
+    padding-left:20px;
+}
