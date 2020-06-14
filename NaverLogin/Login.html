@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+    <title>네이버 로그인</title>
+    <link rel="stylesheet" href="login.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/moonspam/NanumBarunGothic@1.0/nanumbarungothicsubset.css">
+
+<body>
+    <div id="header">
+        <div class="selectLang">
+            <select name="language">
+                <option value="ko">한국어</option>
+                <option value="Eng">English</option>
+                <option value="ch">中文</option>
+            </select>
+        </div>
+        <div id="logo"></div>
+    </div>
+    <div class="contenet_wrap">
+        <form id="fr">
+            <div class="flex-column">
+                <input type="text" name="id" id="id" class="inputForm" placeholder="아이디"/>
+                <input type="password" name="pw" id="pw" class="inputForm" placeholder="비밀번호" />
+
+                <button type="submit" class="btn" id="btnLogin" title="로그인" alt="로그인">로그인</button>
+            </div>
+            <div class="session">
+                <span id="session_left">
+                    <label for="loginSession"><input type="checkbox" name="loginSession" id="loginSession" value="Y"><span style="padding-left:7px">로그인 상태 유지</span></label>
+                </span>
+                <span id="session_right">
+                    <span>IP보안</span> <span style="padding-left:7px;">OFF</span> <span style="color:#d1d1d1;padding-left:7px;">|</span> <span style="padding-left:7px;"><u>일회용 로그인</u></span>
+                </span>
+            </div>
+        </form>
+
+        <div class="find_info">
+            <span>아이디 찾기</span>
+            <span class="space2">|</span>
+            <span>비밀번호 찾기</span>
+            <span class="space2">|</span>
+            <span>회원가입</span>
+        </div>
+
+        <div id="bottom_img"></div>
+
+        <footer>
+            <div class="info">
+                <span>이용약관</span>
+                <span class="space2">|</span>
+                <span><b>개인정보처리방침</b></span>
+                <span class="space2">|</span>
+                <span>책임의 한계와 법적고지</span>
+                <span class="space2">|</span>
+                <span>회원정보 고객센터</span>
+            </div>
+            <div class="copyright">
+                <img src="naver_logo.png" alt="logo" id="bottom_logo"><span>Copyright © &nbsp;<strong>NAVER Corp.</strong>&nbsp; All Rights Reserved.</span>
+            </div>
+        </footer>
+    </div>
+</body>
