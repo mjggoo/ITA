@@ -1,0 +1,200 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    word-break: keep-all;
+}
+html,body{
+    font-family: 'Roboto', sans-serif;
+    overflow-x: hidden; 
+    font-size:1rem;
+}
+header{
+    background-color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;;
+    padding:10px;
+    color:#fff;;
+    font-weight: 500;
+}
+
+#fa-youtube{
+    color:red;
+    font-size:28px;
+}
+.logo_title{
+    padding-left: 3px;
+    position: relative;
+    top:-5px;
+}
+
+.actions .fa-ellipsis-v{
+    padding-left:8px;
+    color:#fff;
+    width:1em !important;
+}
+.margin_10{
+    margin: 0 10px;
+}
+.player{
+    text-align: center;
+    background-color: #000;
+}
+.play_video{
+    width: 100%;
+    max-width:1000px;    
+}
+.info{
+    margin:15px 0px;
+}
+.hashtags{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+}
+.hashtags li{
+    color:#045fd4;
+    padding-right:15px;
+    font-size:0.8125rem;
+}
+.textAndbtn{
+    display: flex;
+    justify-content: space-between;
+}
+.textAndbtn .title{
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+    font-weight: 500;
+}
+.arrow{
+    padding: 5px;
+}
+.text_grey{
+    color:#808080;
+    font-size: 0.8125rem;
+}
+.icons{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 60px;
+    color: #808080;
+    padding:10px auto;
+}
+.iconAndText{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.8125rem;
+    margin-top: 10px;
+}
+.iconAndText span{
+    padding-top:5px;
+}
+.porfile{
+    border-top: solid 1px #d1d1d1;
+    border-bottom: solid 1px #d1d1d1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.profile_info{
+    display:flex ;
+}
+.profile_img img{
+    width:40px;
+    height:40px;
+    border-radius :50%;
+}
+.subscribe_number{
+    color: #808080;
+    font-size: 0.7125rem;
+}
+.profile_name{
+    font-size: 0.875rem;
+    font-weight: 600;
+}
+.profile_info div{
+    display: flex;
+    flex-direction: column;
+    padding-left: 10px;
+    justify-content: center;
+}
+.btn_subscribe{
+    background-color: #f1f1f1;
+    padding: 10px;
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: red;
+    height:66px;
+    display: flex;
+    align-items: center;
+}
+.upNext{
+    margin-top: 15px;
+}
+.upNext article{
+    margin:10px auto;
+    display: flex;
+}
+.upNext img{
+    width:160px;
+    height:90px;
+}
+.upNext .title{
+    font-size: 0.825rem;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+
+}
+.recommend div{
+    padding-left: 10px;
+    display: flex;
+    flex-direction: column;
+}
+.recommend div .channelName, .view_num{
+    font-size: 0.7rem;
+    color: #808080;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    overflow: hidden;
+}
+.upNext .fa-ellipsis-v{
+    color:#000;
+    width:4px !important;
+}
+footer{
+    padding: 20px;
+}
+.media{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.media .info{
+    max-width: 740px;
+
+}
+.media .upNext{
+    max-width: 740px;
+
+}
+@media screen and (max-width:992px){
+    .upNext{
+        margin-top: 0px;
+    }
+
+}
+/*reset*/
+ul{list-style: none;}
+a{text-decoration: none;color:#045fd4}
+button{border: none;background: transparent;}
+button:focus{border:none;}
+/*909090*/
