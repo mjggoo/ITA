@@ -177,20 +177,25 @@ footer{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    width:100%;
 }
 .media .info{
     max-width: 740px;
-
+    width:50%;
 }
 .media .upNext{
     max-width: 740px;
-
+    width:50%;
 }
 @media screen and (max-width:992px){
-    .upNext{
-        margin-top: 0px;
-    }
 
+    .media .info{
+        width:100%;
+    }
+    .media .upNext{
+        margin-top: 0px;
+        width:100%;
+    }
 }
 /*reset*/
 ul{list-style: none;}
