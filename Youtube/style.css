@@ -2,7 +2,6 @@
     margin:0;
     padding:0;
     box-sizing: border-box;
-    word-break: keep-all;
 }
 html,body{
     font-family: 'Roboto', sans-serif;
@@ -19,7 +18,7 @@ header{
     font-weight: 500;
 }
 
-#fa-youtube{
+.fa-youtube{
     color:red;
     font-size:28px;
 }
@@ -43,6 +42,7 @@ header{
 }
 .play_video{
     width: 100%;
+    height: 100%;
     max-width:1000px;    
 }
 .info{
@@ -51,27 +51,32 @@ header{
 .hashtags{
     width: 100%;
     display: flex;
-    justify-content: flex-start;
 }
 .hashtags li{
     color:#045fd4;
-    padding-right:15px;
+    margin-right:15px;
     font-size:0.8125rem;
 }
-.textAndbtn{
+.info .metadata .textAndbtn{
     display: flex;
-    justify-content: space-between;
 }
-.textAndbtn .title{
+.info .metadata .textAndbtn .title{
+    font-weight: 500;
+    margin-right:12px;
+}
+.info .metadata .textAndbtn .title.clamp {
     display: -webkit-box;
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 2;
     overflow: hidden;
-    font-weight: 500;
+  }
+.info .metadata .textAndbtn .arrow{
+    height: 100%;
+    transition: transform 300ms ease-in-out;
 }
-.arrow{
-    padding: 5px;
-}
+.info .metadata .textAndbtn .arrow.clicked {
+    transform: rotate(180deg);
+  }
 .text_grey{
     color:#808080;
     font-size: 0.8125rem;
@@ -134,16 +139,22 @@ header{
     display: flex;
     align-items: center;
 }
+.btn_subscribe a{
+    text-decoration: none;
+    color: red;
+}
 .upNext{
     margin-top: 15px;
 }
-.upNext article{
+.upNext li{
     margin:10px auto;
-    display: flex;
 }
-.upNext img{
+.upNext ul .recommend img{
     width:160px;
     height:90px;
+}
+.upNext ul .recommend{
+    display:flex;
 }
 .upNext .title{
     font-size: 0.825rem;
@@ -170,9 +181,7 @@ header{
     color:#000;
     width:4px !important;
 }
-footer{
-    padding: 20px;
-}
+
 .media{
     display: flex;
     flex-wrap: wrap;
@@ -199,7 +208,8 @@ footer{
 }
 /*reset*/
 ul{list-style: none;}
-a{text-decoration: none;color:#045fd4}
+a{text-decoration: none;}
 button{border: none;background: transparent;}
 button:focus{border:none;}
+a{text-decoration: none; color: #045fd4;}
 /*909090*/
