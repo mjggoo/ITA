@@ -39,6 +39,8 @@ header{
 .player{
     text-align: center;
     background-color: #000;
+    position:sticky;
+    top:0;
 }
 .play_video{
     width: 100%;
