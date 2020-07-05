@@ -7,9 +7,12 @@
     <title>네이버 로그인</title>
     <link rel="stylesheet" href="login.css" type="text/css" />
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/moonspam/NanumBarunGothic@1.0/nanumbarungothicsubset.css">
-
+</head>
 <body>
-    <div id="header">
+    <!-- class는 헤더이지만 header시멘틱 태그를 쓰지않음 -->
+    <div> 
+        <!-- max-width ;margin:0 auto;  //중앙정렬 flex 필요 없음 -->
+    <div id="header">  
         <div class="selectLang">
             <select name="language">
                 <option value="ko">한국어</option>
@@ -17,26 +20,32 @@
                 <option value="ch">中文</option>
             </select>
         </div>
+        <!-- h1시멘틱태그 사용하지 않음 크롤링 -->
         <div id="logo"></div>
     </div>
     <div class="contenet_wrap">
+        <!-- 일부러 form을 안쓰신건가용,,... -->
         <form id="fr">
             <div class="flex-column">
                 <input type="text" name="id" id="id" class="inputForm" placeholder="아이디"/>
                 <input type="password" name="pw" id="pw" class="inputForm" placeholder="비밀번호" />
-
                 <button type="submit" class="btn" id="btnLogin" title="로그인" alt="로그인">로그인</button>
             </div>
             <div class="session">
                 <span id="session_left">
+                    <!-- 라벨에 대한 사용/ for 로 아이디를 연결 해주거나 아예 라벨로 감싸는 방법 둘 중 하나를 택하면 되는거였음 -->
                     <label for="loginSession"><input type="checkbox" name="loginSession" id="loginSession" value="Y"><span style="padding-left:7px">로그인 상태 유지</span></label>
                 </span>
+                <!-- 링크 : onclick="herf"가 습관이 되어 있다보니 a링크보다 cursor:pointer로 주로 코딩하게 됨 -->
                 <span id="session_right">
-                    <span>IP보안</span> <span style="padding-left:7px;">OFF</span> <span style="color:#d1d1d1;padding-left:7px;">|</span> <span style="padding-left:7px;"><u>일회용 로그인</u></span>
+                    <span>IP보안</span>
+                     <span style="padding-left:7px;">OFF</span>
+                      <span style="color:#d1d1d1;padding-left:7px;">|</span>
+                       <span style="padding-left:7px;"><u>일회용 로그인</u></span>
                 </span>
             </div>
         </form>
-
+        <!-- ul 습관화가 되어 있지 않아 span으로 모두 해결하려함... -->
         <div class="find_info">
             <span>아이디 찾기</span>
             <span class="space2">|</span>
@@ -62,4 +71,7 @@
             </div>
         </footer>
     </div>
+</div>
 </body>
+
+<!-- 전체적 평: 시멘틱 태그등 태그를 잘 활용하지 못하고있음 -->

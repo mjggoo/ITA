@@ -8,10 +8,13 @@ body{
 }
 #header{
     position: relative;
+    max-width:900px;
+    margin: 0 auto; /*margin-left, right 에만 auto*/
 }
 .selectLang{
     position: absolute;
     left: 70%;
+    /* right값으로 20px  */
     padding-top: 10px;
 }
 select{
