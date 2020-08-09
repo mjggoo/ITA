@@ -14,7 +14,11 @@ function moveSlide(num){
     currentIndex = num;
 }
 btn.addEventListener('click', function(){
-    alert()
-    moveSlide(currentIndex+1);
-    
+    if(currentIndex < slideCount-3){
+        moveSlide(currentIndex+1);
+        console.log(currentIndex);
+    }
+    else{
+        moveSlide(0);
+    }
 });
