@@ -21,7 +21,7 @@ ul{list-style: none;}
     left:0;top:0;
     transition: left 0.5s ease-out;
 }
-.slides  li:not(:last-child){
+.slides li:not(:last-child){
     margin-right: 30px;
 }
 img{width: 320px; height:213px;border-radius: 10px;}
