@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>이미지 등록하기</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+</head>
+<body>
+    <div class="container">
+        <h1>이미지 등록하기</h1>
+    </div>
+    <div class="container">
+        <!-- CONTENT -->  
+        <div class="content">       
+            <div class="box attach">
+                <div>
+                    <!-- 파일첨부 전 -->
+                    <div class="attach-wrap">
+                        <div class="attached" id="fileName">파일첨부</div>
+                        <div class="attach-file">
+                            <input type="file" class="filecustom" id="file" onchange="fileSelected(this.files)">
+                            <div class="bn-attach"></div>
+                        </div>
+                    </div>
+                    <div class="imgViewWrap">
+                        <h3>이미지 미리보기</h3>
+                        <div class="preview"></div>
+                        <img class="imgView" id="imgPreView" src="" style="display:none"/>
+                    </div>
+                    <!-- 파일첨부 후 -->
+                    <!-- <div class="attach-wrap">
+                        <div class="attached">
+                            <a class="ico-trash"></a>ico-comment.png
+                        </div>
+                        <div class="attach-file">
+                            <input type="file" class="filecustom">
+                            <div class="bn-attach"></div>
+                        </div>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+        <!-- LIST -->
+        <div class="uploadTable">
+            <table>
+               <thead>
+                    <tr>
+                        <th>No.</th>
+                        <th class="thFileName">이름</th>
+                        <th>확장자</th>
+                        <th>용량</th>
+                        <th>pixel</th>
+                        <th class="thFileRoot">파일경로</th>
+                        <th>미리보기</th>
+                        <th>삭제</th>
+                    </tr>
+               </thead>
+               <tbody id="list">
+                    <!-- <tr>
+                        <td>1</td>
+                        <td class="tdFileName">test.png</td>
+                        <td>png</td>
+                        <td>12mb</td>
+                        <td>453x342</td>
+                        <td class="tdFileRoot">c://images/test/test.png</td>
+                        <td><button class="btnView">미리보기</button></td>
+                        <td><button class="btnDelete"></button></td>
+                    </tr> -->
+               </tbody>
+            </table>
+        </div>
+       
+        <!-- LIST END -->
+        <!-- BTN -->
+        <div class="btn-group">
+            <button class="btnSubmit" id="submit" >등록</a>
+        </div>
+    </div>
+</body>
+
+<script src="js/main_vanila.js"></script>
+</html>

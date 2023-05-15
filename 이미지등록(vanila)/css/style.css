@@ -1,0 +1,54 @@
+/* RESET CSS */
+*{box-sizing:border-box}
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline;outline:none}
+/* html, body{height:100%} */
+a{text-decoration:none}
+table{border-collapse:collapse; border-spacing:0}
+button{border:none;cursor: pointer;}
+
+/* ====== COMMON ====== */
+.container{max-width:800px;padding:20px;margin:0 auto; }
+.imgWrap{width: 100%;height: auto;padding:10px;}
+.imgViewWrap{margin: 30px 0;width:250px;height:250px;}
+.imgViewWrap h3{font-size:15px;font-weight: bold;}
+.imgViewWrap img{width:auto;height:auto;}
+.imgViewWrap .preview{width:250px;height:250px;background-color: #efefef;border-radius: 20px;margin:10px 0 0 0 }
+.imgViewWrap .imgView{margin:10px 0 0 0 ;max-width: 250px;max-height:250px;}
+h1{font-size:22px; font-weight:500; letter-spacing:-0.06em; font-weight:600;}
+@media(min-width:1024px){
+h1{font-size:32px; letter-spacing:-0.08em}
+}
+
+.content .box{padding:15px 0}
+@media(min-width:1024px){
+    .content .box > div:first-child{font-size:18px; letter-spacing:-0.05em;}
+    .content .box > div:nth-child(2){width:calc(100% - 130px)}
+}
+
+/* file-attach */
+.attached{border:1px solid #DCE0E6; height:50px; width:calc(100% - 55px); float:left; padding:16px; line-height:19px; text-overflow:ellipsis; white-space:nowrap; overflow:hidden; display:flex; align-items:center;}
+.attach-file {border:1px solid #DCE0E6; height:50px; width:50px; float:right; background:#F7F9FB}
+.attach .bn-attach {width:48px; height:48px; background:url(../image/ico_attach@2x.png) no-repeat center; background-size:17px}
+.filecustom{position:absolute; width:50px; height:50px; opacity:0; margin:0; border:0; z-index:1; cursor:pointer}
+.attach-wrap{position:relative}
+.attach-wrap:after{content:''; display:block; clear:both}
+
+/* btn */
+.btn-group{text-align:center; margin-top:20px}
+.btn-group .btnSubmit{background:#e5eeff; color:#3d66f5; padding:11px 18px; display:inline-block; border-radius:8px; font-weight:bold;font-size:17px;}
+/* table */
+
+
+/* icon */
+.btnDelete{background:url(../image/btn_attach_del@2x.png)center no-repeat; width:20px; height:20px;position:relative;top:-2px;background-size: 18px;vertical-align: middle;}
+.btnView{background-color: #f6f6f6;border:solid 1px #bfbfbf;border-radius:5px;padding:3px 8px}
+
+/*list table*/
+.uploadTable{max-width:800px;width:100%;margin:0 0 40px 0;overflow-x:auto}
+.uploadTable table{width:100%;border-top:solid 2px #222}
+.uploadTable th{font-size:14px;color:#333;text-align:center;padding:10px;border-bottom: solid 1px #dedede;word-break: keep-all;font-weight:bold}
+.uploadTable td{font-size:14px;color:#606060;text-align:center;padding:10px;word-break: keep-all;border-bottom: solid 1px #dedede;}
+.uploadTable .thFileName, .uploadTable .tdFileName{text-align: left;}
+.uploadTable .thFileRoot, .uploadTable .tdFileRoot{text-align: left;}
+/*FOOTER*/
+footer{border-top:1px solid #eee; text-align:center; font-size:13px; color:#888}
